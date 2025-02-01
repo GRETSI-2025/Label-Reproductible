@@ -1,0 +1,121 @@
+name: Formulaire de soumission au Label Reproductible du GRETSI'25
+title: "Nouvelle soumission"
+description: Template pour une nouvelle demande du Label Reproductible
+assignees: akrah
+labels: ["Nouvelle soumission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de renseigner les champs ci-dessous pour finaliser votre soumission au Label Reproductible.
+  - type: markdown
+    attributes:
+      value: "## 1 - Papier soumis au GRETSI'25"
+  - type: input
+    id: title
+    attributes:
+      label: Titre
+      description: "Titre de l'article soumis au GRETSI auquel ce code correspond"
+      placeholder: "À compléter"
+    validations:
+      required: true
+  - type: input
+    id: id
+    attributes:
+      label: Identifiant
+      description: "Numéro attribué à l'article lors de sa soumission au GRETSI"
+      placeholder: "Exemple : 001"
+    validations:
+      required: false
+  - type: textarea
+    id: reproductible
+    attributes:
+      label: Éléments reproductibles
+      description: "Éléments de l'article qui peuvent être reproduits"
+      value: "Exemple :\n
+        - Figure 3.\n
+        - 5ème colonne de la Table 7.\n
+        - etc."
+      render: markdown
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "## 2 - Code source"
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: "Lien vers le dépôt Git (Github, Gitlab, etc.) de mon code"
+      placeholder: "Exemple : https://github.com/... ou https://gitlab.com/..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: language
+    attributes:
+      label: Langage
+      description: "Principaux langages utilisés par le code"
+      options:
+        - label: Python
+        - label: Matlab
+        - label: C
+        - label: C++
+        - label: Julia
+  - type: checkboxes
+    id: os
+    attributes:
+      label: OS
+      description: "Système d'exploitation sur lequel le code a été développé"
+      options:
+        - label: Linux
+        - label: MacOS
+        - label: Windows
+        - label: Autre
+  - type: input
+    id: processor
+    attributes:
+      label: Processeur(s)
+      description: "Processeur(s) de la machine utilisée pendant le développement"
+      placeholder: "Exemple : Processeur Intel® Core™ i7-14700 avec 20 cœurs"
+    validations:
+      required: true
+  - type: input
+    id: ram
+    attributes:
+      label: RAM
+      description: "Quantité de RAM de la machine utilisée pendant le développement"
+      placeholder: "Exemple : 64GB DDR5"
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: Carte(s) graphique(s)
+      description: "Carte(s) graphique(s) de la machine utilisée pendant le développement"
+      placeholder: "Exemple : GeForce RTX 5080"
+    validations:
+      required: true
+  - type: input
+    id: compilation
+    attributes:
+      label: Estimation du temps de compilation
+      description: "En considérant les caractéristiques de la configuration ci-dessus"
+      placeholder: "Exemple : 5 minutes, 2h"
+    validations:
+      required: true
+  - type: input
+    id: execution
+    attributes:
+      label: Estimation du temps d'exécution
+      description: "En considérant les caractéristiques de la configuration ci-dessus"
+      placeholder: "Exemple : 5 minutes, 2h"
+    validations:
+      required: true
+  - type: textarea
+    id: environment-details
+    attributes:
+      label: Informations complémentaires
+      description: "Ajoutez ici toute les informations qui pourraient être utiles au relecteur pour compilez et/ou exécuter votre code"
+      render: markdown
+    validations:
+      required: false
