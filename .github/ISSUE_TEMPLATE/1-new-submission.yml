@@ -54,7 +54,8 @@ body:
     id: language
     attributes:
       label: Langage
-      description: "Principaux langages utilisés par le code"
+      description: "Principaux langages utilisés par le code.\n
+        <i>Nous ne sommes pas en mesure d'évaluer les codes écrits dans d'autres langages.</i>"
       options:
         - label: Python
         - label: Matlab
