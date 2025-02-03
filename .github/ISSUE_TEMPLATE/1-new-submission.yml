@@ -24,7 +24,7 @@ body:
     attributes:
       label: Identifiant
       description: "Numéro attribué à l'article lors de sa soumission au GRETSI"
-      placeholder: "Exemple : 001"
+      placeholder: "Exemple : ID0001"
     validations:
       required: false
   - type: textarea
