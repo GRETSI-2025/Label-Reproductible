@@ -15,8 +15,6 @@ En tant que reviewer, vous recevez un lien vers un dossier Seafile qui contient 
 * **l'article** associé au code à reviewer
 * **un compte-rendu** au format Markdown avec des sections à compléter **avant, pendant et après** votre review.
 
-> **ATTENTION** : Si vous éditez le compte-rendu directement sur Seafile, il n'y a pas de sauvegarde automatique, **il faut utiliser CTRL+S ou cliquer sur la disquette haut haut à droite pour enregistrer vos modifications**.
-
 ## À vérifier avant la review
 
 Avant de commencer à installer/compiler/exécuter, assurez-vous :
