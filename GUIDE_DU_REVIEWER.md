@@ -6,14 +6,18 @@
 
 Pour effectuer une review, **partez de la page de l'issue Github** qui vous a été affectée.
 
-Si vous rencontrez des erreurs ou des problèmes avant ou pendant votre review, vous pouvez dialoguer avec l'auteur en écrivant des commentaires en bas de l'issue. L'objectif n'est pas d'arrêter la review lorsqu'il y a un problème, mais d'**amener l'auteur à améliorer son code pour rendre ses résultats reproductibles**.
+Si vous rencontrez des erreurs ou des problèmes avant ou pendant votre review, vous pouvez dialoguer avec l'auteur en écrivant des commentaires en bas de l'issue.
+L'objectif n'est pas d'arrêter la review lorsqu'il y a un problème, mais d'**amener l'auteur à améliorer son code pour rendre ses résultats reproductibles**.
 
 ## Votre review sur Seafile
 
 En tant que reviewer, vous recevez un lien vers un dossier Seafile qui contient :
 
 * **l'article** associé au code à reviewer
-* **un compte-rendu** au format Markdown avec des sections à compléter **avant, pendant et après** votre review.
+* **un compte-rendu** au format Markdown ou Docx à télécharger
+
+Le compte-rendu comporte des sections à compléter **avant, pendant et après** votre review.
+Une fois la review terminée, vous devez déposer dans ce même dossier Seafile votre compte-rendu complété.
 
 ## À vérifier avant la review
 
