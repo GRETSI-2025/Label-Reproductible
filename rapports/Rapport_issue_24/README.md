@@ -1,6 +1,6 @@
 # GRETSI'25 - Label Reproductible - Rapport de l'issue #24
 
-![](../../img/label_argent.png)
+![](../../img/label_or.png)
 
 Code testé par Mathilde DUPOUY.
 
